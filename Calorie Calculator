@@ -1,0 +1,312 @@
+<style>
+    input {
+        background-color: white !important;
+    }
+
+    #calculate {
+        margin-top: 10px !important;
+    }
+    #message {
+        display: none;
+    }
+    #message,
+    #result {
+        width: 100%;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 20px;
+    }
+    #result {
+        color: white;
+        padding-top: 5px;
+        display: inline-block;
+    }
+    .elementor-field-label {
+        margin-top: 10px !important;
+        font-size: 18px;
+    }
+</style>
+
+<section
+    class="elementor-element elementor-element-45b5304 elementor-section-boxed elementor-section-height-default elementor-section-height-default elementor-section elementor-top-section"
+>
+    <div class="elementor-container elementor-column-gap-default">
+        <div class="elementor-row">
+            <div
+                class="elementor-element elementor-element-70f975c elementor-column elementor-col-100 elementor-top-column"
+            >
+                <div class="elementor-column-wrap">
+                    <div class="elementor-widget-wrap">
+                        <div
+                            class="elementor-element elementor-element-00529c4 elementor-button-align-stretch elementor-widget elementor-widget-form"
+                        >
+                            <div class="elementor-widget-container">
+                                <form
+                                    class="elementor-form"
+                                    name="calculator"
+                                    id="calculator-form"
+                                >
+                                    <div
+                                        class="elementor-form-fields-wrapper elementor-labels-above"
+                                    >
+                                        <div
+                                            class="elementor-field-type-number elementor-field-group elementor-column elementor-field-group-name elementor-col-100 elementor-field-required"
+                                        >
+                                            <label class="elementor-field-label"
+                                                >Age</label
+                                            ><input
+                                                type="number"
+                                                name="form_fields[name]"
+                                                id="age"
+                                                class="elementor-field elementor-size-sm  elementor-field-textual"
+                                                placeholder="Years"
+                                                required="required"
+                                                aria-required="true"
+                                                min=""
+                                                max=""
+                                            />
+                                        </div>
+                                        <div
+                                            class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-9b99adf elementor-col-100 elementor-field-required"
+                                        >
+                                            <label class="elementor-field-label"
+                                                >Sex</label
+                                            >
+                                            <div
+                                                class="elementor-field-subgroup  elementor-subgroup-inline"
+                                            >
+                                                <span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="m"
+                                                        id="male"
+                                                        name="form_fields[9b99adf]"
+                                                        required="required"
+                                                        aria-required="true"
+                                                    />
+                                                    <label>Male</label></span
+                                                ><span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="f"
+                                                        id="female"
+                                                        name="form_fields[9b99adf]"
+                                                        required="required"
+                                                        aria-required="true"
+                                                    />
+                                                    <label>Female</label></span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="elementor-field-type-number elementor-field-group elementor-column elementor-field-group-722445f elementor-col-100 elementor-field-required"
+                                        >
+                                            <label class="elementor-field-label"
+                                                >Height </label
+                                            ><input
+                                                type="number"
+                                                id="height"
+                                                class="elementor-field elementor-size-sm  elementor-field-textual"
+                                                placeholder="Centimetres"
+                                                required="required"
+                                                aria-required="true"
+                                                min=""
+                                                max=""
+                                            />
+                                        </div>
+                                        <div
+                                            class="elementor-field-type-text elementor-field-group elementor-column elementor-field-group-8124a8e elementor-col-100"
+                                        >
+                                            <label class="elementor-field-label"
+                                                >Weight</label
+                                            ><input
+                                                size="1"
+                                                type="text"
+                                                id="weight"
+                                                class="elementor-field elementor-size-sm  elementor-field-textual"
+                                                placeholder="Kilograms"
+                                            />
+                                        </div>
+                                        <div
+                                            class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-7559b54 elementor-col-100 elementor-field-required"
+                                        >
+                                            <label class="elementor-field-label"
+                                                >Goal</label
+                                            >
+                                            <div
+                                                class="elementor-field-subgroup  "
+                                            >
+                                                <span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="1"
+                                                        id="lose"
+                                                        required="required"
+                                                        aria-required="true"
+                                                    />
+                                                    <label
+                                                        >Lose Weight</label
+                                                    ></span
+                                                ><span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="3"
+                                                        id="maintain"
+                                                        required="required"
+                                                        aria-required="true"
+                                                    />
+                                                    <label
+                                                        >Maintain weight</label
+                                                    ></span
+                                                ><span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="2"
+                                                        id="gain"
+                                                        required="required"
+                                                        aria-required="true"
+                                                    />
+                                                    <label
+                                                        >Gain Weight</label
+                                                    ></span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="elementor-field-type-radio elementor-field-group elementor-column elementor-field-group-8a98111 elementor-col-100"
+                                        >
+                                            <label class="elementor-field-label"
+                                                >Activity Level</label
+                                            >
+                                            <div
+                                                class="elementor-field-subgroup  "
+                                            >
+                                                <span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="1"
+                                                        id="sedentary"
+                                                        name="activity"
+                                                    />
+                                                    <label
+                                                        >Sedentary</label
+                                                    ></span
+                                                ><span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="2"
+                                                        id="mod-active"
+                                                        name="activity"
+                                                    />
+                                                    <label
+                                                        >Moderately active
+                                                    </label></span
+                                                ><span
+                                                    class="elementor-field-option"
+                                                    ><input
+                                                        type="radio"
+                                                        value="3"
+                                                        id="active"
+                                                        name="activity"
+                                                    />
+                                                    <label>Active</label></span
+                                                >
+                                            </div>
+                                        </div>
+                                        <div
+                                            class="elementor-field-group elementor-column elementor-field-type-submit elementor-col-100"
+                                        >
+                                            <button
+                                                type="submit"
+                                                class="elementor-button elementor-size-sm"
+                                                id="calculate"
+                                            >
+                                                <span>
+                                                    <span
+                                                        class="elementor-button-text"
+                                                        >Calculate</span
+                                                    >
+                                                </span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<div id="message">
+    Based on this information, your total daily calorie target should be:
+    <div id="result"></div>
+</div>
+
+<script>
+    var app = app || {};
+    app.dom = {};
+
+    app.dom.calculate = document.getElementById('calculate');
+    app.dom.age = document.getElementById('age');
+    app.dom.weight = document.getElementById('weight');
+    app.dom.height = document.getElementById('height');
+    // sex
+    app.dom.male = document.getElementById('male');
+    app.dom.female = document.getElementById('female');
+    //goal
+    app.dom.lose = document.getElementById('lose');
+    app.dom.maintain = document.getElementById('maintain');
+    app.dom.gain = document.getElementById('gain');
+    //activity-level
+    app.dom.sedentary = document.getElementById('sedentary');
+    app.dom.modactive = document.getElementById('mod-active');
+    app.dom.active = document.getElementById('active');
+    app.dom.message = document.getElementById('message');
+    app.dom.result = document.getElementById('result');
+
+    app.dom.calculate.addEventListener('click', function(e) {
+        e.preventDefault();
+        var x;
+        w = app.dom.weight.value;
+        h = app.dom.height.value;
+        a = app.dom.age.value;
+        if (app.dom.male.checked) {
+            //Male
+            console.log('male');
+            x = 66.5 + 13.8 * w + 5 * h - 6.8 * a;
+        } else if (app.dom.female.checked) {
+            console.log('female');
+            //Female
+            x = 655.1 + 9.6 * w + 1.9 * h - 4.7 * a;
+        }
+
+        var ef;
+        if (app.dom.sedentary.checked) {
+            ef = 1.2;
+        } else if (app.dom.modactive.checked) {
+            ef = 1.3;
+        } else if (app.dom.active.checked) {
+            ef = 1.4;
+        }
+
+        var z = 1;
+        if (app.dom.lose.checked) {
+            z = 0.9;
+        } else if (app.dom.gain.checked) {
+            z = 1.1;
+        }
+
+        var result = x * ef * z;
+        app.dom.result.innerHTML = Math.round(result);
+        app.dom.message.style.display = 'block';
+    });
+</script>
